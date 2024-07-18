@@ -1,0 +1,135 @@
+{
+    "name": "ZsynhsRecipeTweaks",
+    "author": "Zsynh",
+    "fileName": "ZsynhsRecipeTweaks",
+    "description": "A couple of tweaks to make life less grindy.",
+    "version": "1.0",
+    "Level2": "True",
+    "Rows": [
+        {
+            "CurrentFile": "Crafting-D_ProcessorRecipes.json",
+            "File_Items": [
+                        {
+                            "Name": "Gold_Wire",
+                            "Requirement": {
+                                "RowName": "Gold_Wire"
+                            },
+                            "RecipeSets": [
+                                {
+                                    "RowName": "Machining_Bench",
+                                    "DataTableName": "D_RecipeSets"
+                                },
+                                {
+                                    "RowName": "Fabricator",
+                                    "DataTableName": "D_RecipeSets"
+                                }
+                            ],
+                            "Inputs": [
+                                {
+                                    "Element": {
+                                        "RowName": "Refined_Gold",
+                                        "DataTableName": "D_ItemsStatic"
+                                    },
+                                    "Count": 1,
+                                    "DynamicProperties": []
+                                }
+                            ],
+                            "Outputs": [
+                                {
+                                    "Element": {
+                                        "RowName": "Gold_Wire",
+                                        "DataTableName": "D_ItemTemplate"
+                                    },
+                                    "Count": 10,
+                                    "DynamicProperties": [],
+                                    "Alterations": []
+                                }
+                            ],
+                            "Audio": {
+                                "RowName": "MachiningBench"
+                            }
+                        },
+                        {
+                            "Name": "Copper_Wire",
+                            "Requirement": {
+                                "RowName": "Copper_Wire"
+                            },
+                            "RecipeSets": [
+                                {
+                                    "RowName": "Machining_Bench",
+                                    "DataTableName": "D_RecipeSets"
+                                },
+                                {
+                                    "RowName": "Fabricator",
+                                    "DataTableName": "D_RecipeSets"
+                                }
+                            ],
+                            "Inputs": [
+                                {
+                                    "Element": {
+                                        "RowName": "Refined_Copper",
+                                        "DataTableName": "D_ItemsStatic"
+                                    },
+                                    "Count": 1,
+                                    "DynamicProperties": []
+                                }
+                            ],
+                            "Outputs": [
+                                {
+                                    "Element": {
+                                        "RowName": "Copper_Wire",
+                                        "DataTableName": "D_ItemTemplate"
+                                    },
+                                    "Count": 10,
+                                    "DynamicProperties": [],
+                                    "Alterations": []
+                                }
+                            ],
+                            "Audio": {
+                                "RowName": "MachiningBench"
+                            }
+                        },
+                {
+                    "Name": "Seed_Oil",
+                    "SessionRequirement": {
+                        "DataTableName": "D_SessionFlags"
+                    },
+                    "RequiredMillijoules": 150,
+					 "RecipeSets": [
+                        {
+                            "RowName": "Mortar_And_Pestle",
+                            "DataTableName": "D_RecipeSets"
+                        },
+                        {
+                            "RowName": "Material_Processor",
+                            "DataTableName": "D_RecipeSets"
+                        }
+                    ],
+                    "Inputs": [
+                        {
+                            "Element": {
+                                "RowName": "Seed",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 10,
+                            "DynamicProperties": []
+                        }
+                    ],
+                    "Outputs": [
+                        {
+                            "Element": {
+                                "RowName": "Seed_Oil",
+                                "DataTableName": "D_ItemTemplate"
+                            },
+                            "Count": 5,
+                            "DynamicProperties": []
+                        }
+                    ],
+                    "Audio": {
+                        "RowName": "MortarPestle"
+                    }
+                }
+            ]
+        }
+		]
+		}
