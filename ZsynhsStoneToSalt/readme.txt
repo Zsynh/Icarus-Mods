@@ -1,0 +1,1 @@
+A very simple mod to take 10 stone and turn it into 2 salt in a materials processor or mortal and pestle.

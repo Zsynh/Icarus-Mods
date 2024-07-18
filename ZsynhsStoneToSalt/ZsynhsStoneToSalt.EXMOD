@@ -1,0 +1,56 @@
+{
+    "name": "ZsynhsStoneToSalt",
+    "author": "Zsynh",
+    "fileName": "ZsynhsStoneToSalt",
+    "description": "A simple recipe tweak.",
+    "version": "1.0",
+    "Level2": "True",
+    "Rows": [
+        {
+            "CurrentFile": "Crafting-D_ProcessorRecipes.json",
+            "File_Items": [
+                        {
+                           
+                    "Name": "Salt",
+                    "SessionRequirement": {
+                        "DataTableName": "D_SessionFlags"
+                    },
+                    "RequiredMillijoules": 150,
+					 "RecipeSets": [
+                        {
+                            "RowName": "Mortar_And_Pestle",
+                            "DataTableName": "D_RecipeSets"
+                        },
+                        {
+                            "RowName": "Material_Processor",
+                            "DataTableName": "D_RecipeSets"
+                        }
+                    ],
+                    "Inputs": [
+                        {
+                            "Element": {
+                                "RowName": "Stone",
+                                "DataTableName": "D_ItemsStatic"
+                            },
+                            "Count": 10,
+                            "DynamicProperties": []
+                        }
+                    ],
+                    "Outputs": [
+                        {
+                            "Element": {
+                                "RowName": "Salt",
+                                "DataTableName": "D_ItemTemplate"
+                            },
+                            "Count": 2,
+                            "DynamicProperties": []
+                        }
+                    ],
+                    "Audio": {
+                        "RowName": "MortarPestle"
+                    }
+                }
+            ]
+        }
+		]
+		}
